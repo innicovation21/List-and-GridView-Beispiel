@@ -9,3 +9,8 @@
 [sizer-Package](https://pub.dev/packages/sizer)
 
 [assets / locale project images]()
+
+
+## Hinweis:
+
+**Die zu verwendenden Bilder findet ihr in der cimcloud**
