@@ -34,7 +34,8 @@ class _Screen1State extends State<Screen1> {
                 height: 70.h, // 70% der Screenhöhe
                 child: ListView.builder(
                     // itemCount -> Angabe für Anzahl der Elemente
-                    itemCount: avengersList.length,
+                    // ALT: itemCount: avengersList.length,
+                    itemCount: heroes.length,
                     // itemBuilder: Vorlage für jedes einzelne Listenitem
                     itemBuilder: (BuildContext context, int index) {
                       return SizedBox(
@@ -49,7 +50,8 @@ class _Screen1State extends State<Screen1> {
                                 bottom: 5.h), // 5% der Screenhöhe
                             decoration: BoxDecoration(
                               image: DecorationImage(
-                                  image: AssetImage(avengersList[index]),
+                                  // ALT: image: AssetImage(avengersList[index]),
+                                  image: AssetImage(heroes[index].image),
                                   fit: BoxFit.cover),
                             ),
                             // Column kann auch genutzt werden zur verticalen,
@@ -62,7 +64,7 @@ class _Screen1State extends State<Screen1> {
                                   width: 30.h, // 30% der Screenhöhe
                                   color: Colors.black,
                                   child: Text(
-                                    "name",
+                                    heroes[index].name,
                                     // style -> Formatierung des Textes via TextStyle-Widget
                                     style: TextStyle(
                                         color: Colors.white,
@@ -94,3 +96,4 @@ class _Screen1State extends State<Screen1> {
     );
   }
 }
+
