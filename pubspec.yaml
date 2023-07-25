@@ -35,6 +35,11 @@ flutter:
   # -----------------------  -----------------------  ----------------------- 
   # ----------------------- Zugriff auf unsere Bilder ----------------------- 
   assets:
+  # !!!Einrückung beachten!!!
     - assets/images/
+  # im Falle von diversen Unterordnern im assets-ordner
+  # müssen für diese ebenfalls Pfade hier angelegt werden
+    - assets/images/villains/
+    - assets/images/movies/
   # -----------------------  -----------------------  ----------------------- 
   # -----------------------  -----------------------  ----------------------- 
