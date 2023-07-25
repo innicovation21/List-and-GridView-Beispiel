@@ -1,6 +1,11 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:images_listview_gridview_sizer/variables/listen.dart';
 import 'package:sizer/sizer.dart';
+import 'package:images_listview_gridview_sizer/widgets/navigationdrawer.dart';
+
+import '../widgets/builderitems.dart';
 
 class Screen1 extends StatefulWidget {
   const Screen1({super.key});
@@ -14,6 +19,7 @@ class _Screen1State extends State<Screen1> {
   Widget build(BuildContext context) {
     // Scaffold -> Vorlage für App-Screen von Google
     return Scaffold(
+      endDrawer: NavDrawer(),
       appBar: AppBar(
         // centertitle -> zentriert den Titel in der AppBar
         centerTitle: true,
@@ -35,48 +41,15 @@ class _Screen1State extends State<Screen1> {
                 child: ListView.builder(
                     // itemCount -> Angabe für Anzahl der Elemente
                     // ALT: itemCount: avengersList.length,
+                    // NEU: List, bestehend aus Character-Objekten (siehe listen.dart)
                     itemCount: heroes.length,
                     // itemBuilder: Vorlage für jedes einzelne Listenitem
                     itemBuilder: (BuildContext context, int index) {
-                      return SizedBox(
-                        height: 30.h, // 30% der Screenhöhe
-                        width: 30.h, // 30% der Screenhöhe
-                        // FittedBox -> passt sich an die Größe des umgebenden Elements
-                        child: FittedBox(
-                          child: Container(
-                            height: 30.h, // 30% der Screenhöhe
-                            width: 30.h, // 30% der Screenhöhe
-                            margin: EdgeInsets.only(
-                                bottom: 5.h), // 5% der Screenhöhe
-                            decoration: BoxDecoration(
-                              image: DecorationImage(
-                                  // ALT: image: AssetImage(avengersList[index]),
-                                  image: AssetImage(heroes[index].image),
-                                  fit: BoxFit.cover),
-                            ),
-                            // Column kann auch genutzt werden zur verticalen,
-                            // Positionierung eines einzelnen Elementes...
-                            child: Column(
-                              // ... mit Hilfe von mainAxisAlignment
-                              mainAxisAlignment: MainAxisAlignment.end,
-                              children: [
-                                Container(
-                                  width: 30.h, // 30% der Screenhöhe
-                                  color: Colors.black,
-                                  child: Text(
-                                    heroes[index].name,
-                                    // style -> Formatierung des Textes via TextStyle-Widget
-                                    style: TextStyle(
-                                        color: Colors.white,
-                                        // sp -> scalable pixels - Textgröße abhängig von Screengröße
-                                        fontSize: 20.sp),
-                                    textAlign: TextAlign.center,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
+                      // benutzerdefiniertes widget(siehe builderitems.dart)
+                      return ListViewContainer(
+                        // parameter für bild-pfad und name
+                        image: heroes[index].image,
+                        name: heroes[index].name,
                       );
                     }),
               ),
@@ -96,4 +69,3 @@ class _Screen1State extends State<Screen1> {
     );
   }
 }
-
