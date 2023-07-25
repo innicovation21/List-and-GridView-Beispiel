@@ -13,4 +13,6 @@
 
 ## Hinweis:
 
-**Die zu verwendenden Bilder findet ihr in der cimcloud**
+1. **Die zu verwendenden Bilder findet ihr in der cimcloud**
+
+2. **Dieses Repository ist NICHT das Gesamtprojekt. Hier findet ihr nur die bearbeiteten und erstellten Dateien**
