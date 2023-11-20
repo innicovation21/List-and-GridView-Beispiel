@@ -42,12 +42,12 @@ List<Character> villains = [
 // Liste mit Movies, damit wir neben dem Pfad
 // auch das Jahr angeben und abrufen können
 List<Movie> movies = [
-  Movie("images/movies/a_aou.jpg", "2015"),
-  Movie("images/movies/antman.jpg", "2015"),
-  Movie("images/movies/capt_marvel.jpg", "2019"),
-  Movie("images/movies/blackwidow.jpg", "2021"),
-  Movie("images/movies/shang_chi.webp", "2021"),
+  Movie("images/movies/a_aou.png", "2015"),
+  Movie("images/movies/antman.png", "2015"),
+  Movie("images/movies/capt_marvel.png", "2019"),
+  Movie("images/movies/blackwidow.png", "2021"),
+  Movie("images/movies/shang_chi.png", "2021"),
   Movie("images/movies/sm_ffh.png", "2021"),
-  Movie("images/movies/thor_lat.jpeg", "2022"),
-  Movie("images/movies/gotg3.webp", "2023"),
+  Movie("images/movies/thor_lat.png", "2022"),
+  Movie("images/movies/gotg3.png", "2023"),
 ];
