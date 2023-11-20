@@ -29,14 +29,14 @@ List<Character> heroes = [
 // Liste mit Characters, damit wir neben dem Pfad
 // auch einen Namen angeben und abrufen können
 List<Character> villains = [
-  Character("Doc Oc", "images/villains/doctoroctopus.jpg"),
-  Character("Galactus", "images/villains/galactus.jpg"),
-  Character("Hela", "images/villains/hela.webp"),
-  Character("Loki", "images/villains/loki.jpeg"),
+  Character("Doc Oc", "images/villains/doctoroctopus.png"),
+  Character("Galactus", "images/villains/galactus.png"),
+  Character("Hela", "images/villains/hela.png"),
+  Character("Loki", "images/villains/loki.png"),
   Character("Red Skull", "images/villains/redskull.png"),
-  Character("Sabretooth", "images/villains/sabretooth.jpg"),
-  Character("Thanos", "images/villains/thanos.jpg"),
-  Character("Ultron", "images/villains/ultron.jpeg")
+  Character("Sabretooth", "images/villains/sabretooth.png"),
+  Character("Thanos", "images/villains/thanos.png"),
+  Character("Ultron", "images/villains/ultron.png")
 ];
 
 // Liste mit Movies, damit wir neben dem Pfad
