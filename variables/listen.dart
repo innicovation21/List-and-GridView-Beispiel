@@ -5,25 +5,25 @@ import '../datamodels/characters.dart';
 // hier eine Liste mit unseren Charakteren
 //  nutzen wir später nicht mehr
 List<String> avengersList = [
-  "images/groot.jpeg",
-  "images/ironman.jpeg",
-  "images/wong.jpeg",
-  "images/thor.jpeg",
-  "images/wanda.jpg",
-  "images/widow.jpg",
-  "images/rescue.jpg"
+  "images/groot.png",
+  "images/ironman.png",
+  "images/wong.png",
+  "images/thor.png",
+  "images/wanda.png",
+  "images/widow.png",
+  "images/rescue.png"
 ];
 
 // Liste mit Characters, damit wir neben dem Pfad
 // auch einen Namen angeben und abrufen können
 List<Character> heroes = [
-  Character("Groot", "images/groot.jpeg"),
-  Character("Iron Man", "images/ironman.jpeg"),
-  Character("Wong", "images/wong.jpeg"),
-  Character("Thor", "images/thor.jpeg"),
-  Character("Wanda", "images/wanda.jpg"),
-  Character("Black Widow", "images/widow.jpg"),
-  Character("Rescue", "images/rescue.jpg")
+  Character("Groot", "images/groot.png"),
+  Character("Iron Man", "images/ironman.png"),
+  Character("Wong", "images/wong.png"),
+  Character("Thor", "images/thor.png"),
+  Character("Wanda", "images/wanda.png"),
+  Character("Black Widow", "images/widow.png"),
+  Character("Rescue", "images/rescue.png")
 ];
 
 // Liste mit Characters, damit wir neben dem Pfad
